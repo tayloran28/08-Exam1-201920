@@ -3,8 +3,8 @@ Exam 1, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Alyssa Taylor.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -45,6 +45,40 @@ def test_factor_sum():
     # WRITE YOUR TESTS BELOW HERE:
     ###########################################################################
 
+    # Test 1:
+    expected = 11
+    actual = factor_sum(28)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 2:
+    expected = 4
+    actual = factor_sum(25)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 3:
+    expected = XXX
+    actual = factor_sum(XXX)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 4:
+    expected = XXX
+    actual = factor_sum(XXX)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 5:
+    expected = XXX
+    actual = factor_sum(XXX)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
 
 def factor_sum(n):
     """
@@ -78,3 +112,14 @@ def factor_sum(n):
     ###########################################################################
     # DO NOT modify the above line of code!
     ###########################################################################
+
+    total = 0
+    if k in range(1, n):
+        total = total + (k % 2 == 0)
+    return total
+
+
+
+
+
+main()
